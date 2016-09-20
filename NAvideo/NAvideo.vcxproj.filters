@@ -24,12 +24,12 @@
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Generated Files\Debug">
-      <UniqueIdentifier>{a5010509-573b-4d97-ad89-c34800692fb0}</UniqueIdentifier>
+      <UniqueIdentifier>{8a448a20-cbe6-4a42-a8c9-8dcea01c95d6}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Generated Files\Release">
-      <UniqueIdentifier>{03882754-41da-4484-8be8-26a9c298e35c}</UniqueIdentifier>
+      <UniqueIdentifier>{9eeb7111-7a21-4e3a-9154-713deb637c48}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
@@ -38,44 +38,32 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="vfgui_test.cpp">
+    <ClCompile Include="navideo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_vfgui_test.cpp">
+    <ClCompile Include="GeneratedFiles\Debug\moc_navideo.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_vfgui_test.cpp">
+    <ClCompile Include="GeneratedFiles\Release\moc_navideo.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\qrc_vfgui_test.cpp">
+    <ClCompile Include="GeneratedFiles\qrc_navideo.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="CVImageWidget.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_CVImageWidget.cpp">
-      <Filter>Generated Files\Debug</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_CVImageWidget.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="vfgui_test.h">
+    <CustomBuild Include="navideo.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="vfgui_test.ui">
+    <CustomBuild Include="navideo.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="vfgui_test.qrc">
+    <CustomBuild Include="navideo.qrc">
       <Filter>Resource Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="CVImageWidget.h">
-      <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GeneratedFiles\ui_vfgui_test.h">
+    <ClInclude Include="GeneratedFiles\ui_navideo.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>

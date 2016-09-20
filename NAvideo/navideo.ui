@@ -1,39 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>VFgui_testClass</class>
- <widget class="QMainWindow" name="VFgui_testClass">
+ <class>NAvideoClass</class>
+ <widget class="QMainWindow" name="NAvideoClass">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1055</width>
-    <height>806</height>
+    <width>997</width>
+    <height>755</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>VFgui_test</string>
+   <string>NAvideo</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label">
+   <widget class="QVideoWidget" name="moviewidget" native="true">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>70</y>
-      <width>481</width>
+      <x>270</x>
+      <y>130</y>
+      <width>511</width>
       <height>381</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-   </widget>
-   <widget class="CVImageWidget" name="imgWidget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>589</x>
-      <y>120</y>
-      <width>421</width>
-      <height>331</height>
      </rect>
     </property>
    </widget>
@@ -43,8 +30,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1055</width>
-     <height>26</height>
+     <width>997</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>
@@ -57,18 +44,24 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents"/>
+  </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>
   <customwidget>
-   <class>CVImageWidget</class>
+   <class>QVideoWidget</class>
    <extends>QWidget</extends>
-   <header>cvimagewidget.h</header>
+   <header>qvideowidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="vfgui_test.qrc"/>
+  <include location="navideo.qrc"/>
  </resources>
  <connections/>
 </ui>

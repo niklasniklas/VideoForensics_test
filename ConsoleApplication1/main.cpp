@@ -17,8 +17,8 @@ bool saveFrame(cv::VideoCapture video, cv::Mat frame, std::string videoFilename)
 std::string getFrameFilepath(cv::VideoCapture video, std::string videoFilename);
 
 
-std::string filename1 = "E:\\6.Testdata\\Video\\frex\\2013-04-06 192000.avi";		// Jobb
-//	std::string filename = "C:\\2.Testdata\\Video\\frex\\2013-04-06 192000.avi";	// Hemma
+//std::string filename1 = "E:\\6.Testdata\\Video\\frex\\2013-04-06 192000.avi";		// Jobb
+std::string filename1 = "C:\\2.Testdata\\Video\\frex\\2013-04-06 192000.avi";	// Hemma
 
 
 
