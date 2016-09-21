@@ -12,9 +12,9 @@ NAvideo::NAvideo(QWidget *parent)
 	
 	QMediaPlaylist *playlist;
 	playlist = new QMediaPlaylist;
-	//playlist->addMedia(QUrl::fromLocalFile("D:\\6.Testdata\\Video\\egna filmer\\MVI_3690.MOV"));
+	playlist->addMedia(QUrl::fromLocalFile("E:\\6.Testdata\\Video\\egna filmer\\MVI_3690.MOV"));
 	//playlist->addMedia(QUrl::fromLocalFile("E:\\WORK\\testdata\\exempelvideo\\testfilmer\\MOV00031.MP4"));
-	playlist->addMedia(QUrl::fromLocalFile("C:\\2.Testdata\\Video\\egna filmer\\MVI_3691.MOV"));
+	//playlist->addMedia(QUrl::fromLocalFile("C:\\2.Testdata\\Video\\egna filmer\\MVI_3691.MOV"));
 	playlist->setCurrentIndex(1);
 
 	QMediaPlayer *player;

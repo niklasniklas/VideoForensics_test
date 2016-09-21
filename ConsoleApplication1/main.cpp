@@ -27,6 +27,8 @@ void main(void)
 	TCHAR s[100];
 	GetCurrentDirectory(100, s);
 
+	std::cout << s;
+
 //---
 	// QStandardPaths Class
 	// http://doc.qt.io/qt-5/qstandardpaths.html
