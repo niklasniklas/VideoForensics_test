@@ -7,8 +7,8 @@ VFgui_test::VFgui_test(QWidget *parent)
 	ui.setupUi(this);
 
 	// i Widget
-	cv::Mat img = cv::imread("E:\\6.Testdata\\Bilder\\lena.png");
-//	cv::Mat img = cv::imread("C:\\2.Testdata\\Bilder\\boldt.jpg");
+//	cv::Mat img = cv::imread("E:\\6.Testdata\\Bilder\\lena.png");
+	cv::Mat img = cv::imread("C:\\2.Testdata\\Bilder\\boldt.jpg");
 	ui.imgWidget->showImage(img);
 
 
