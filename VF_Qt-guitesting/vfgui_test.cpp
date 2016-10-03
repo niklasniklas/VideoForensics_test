@@ -1,11 +1,12 @@
 #include "vfgui_test.h"
 #include <opencv2\opencv.hpp>
+#include <qstandardpaths.h>
 
 VFgui_test::VFgui_test(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
-
+	/*
 	// i Widget
 	cv::Mat img = cv::imread("E:\\6.Testdata\\Bilder\\lena.png");
 //	cv::Mat img = cv::imread("C:\\2.Testdata\\Bilder\\boldt.jpg");
@@ -22,6 +23,12 @@ VFgui_test::VFgui_test(QWidget *parent)
 	ui.label->setPixmap(QPixmap::fromImage(qtimg));
 	ui.label->resize(siz);
 	//	ui.label->resize(ui.label->pixmap()->size());
+*/
+	QString str1 = QStandardPaths::writableLocation(QStandardPaths::StandardLocation::DesktopLocation);
+	QString str2 = QStandardPaths::writableLocation(QStandardPaths::StandardLocation::DocumentsLocation);
+
+	ui.label->setText(str2);
+
 
 }
 
