@@ -26,6 +26,8 @@ VFgui_test::VFgui_test(QWidget *parent)
 */
 	QString str1 = QStandardPaths::writableLocation(QStandardPaths::StandardLocation::DesktopLocation);
 	QString str2 = QStandardPaths::writableLocation(QStandardPaths::StandardLocation::DocumentsLocation);
+	QString str3 = QStandardPaths::writableLocation(QStandardPaths::StandardLocation::AppDataLocation);
+
 
 	ui.label->setText(str2);
 

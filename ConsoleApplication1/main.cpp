@@ -7,6 +7,8 @@
 
 #include <opencv2\opencv.hpp>
 
+#define SOL_DIR "$(ProjectDir)"
+
 std::vector<std::string>  splitpath(const std::string filepath);
 std::string getFrameFilePath(std::string videoFileName, int frameNo);
 int getVideolength(const cv::VideoCapture &video);
@@ -17,8 +19,8 @@ bool saveFrame(cv::VideoCapture video, cv::Mat frame, std::string videoFilename)
 std::string getFrameFilepath(cv::VideoCapture video, std::string videoFilename);
 
 
-//std::string filename1 = "E:\\6.Testdata\\Video\\frex\\2013-04-06 192000.avi";		// Jobb
-std::string filename1 = "C:\\2.Testdata\\Video\\frex\\2013-04-06 192000.avi";	// Hemma
+std::string filename1 = "E:\\6.Testdata\\Video\\frex\\2013-04-06 192000.avi";		// Jobb
+//std::string filename1 = "C:\\2.Testdata\\Video\\frex\\2013-04-06 192000.avi";	// Hemma
 
 
 
@@ -26,8 +28,21 @@ void main(void)
 {
 	TCHAR s[100];
 	GetCurrentDirectory(100, s);
+	std::wstring tmp_ws(s);
+	std::string result(tmp_ws.begin(), tmp_ws.end());
+	std::cout << result;
 
-	std::cout << s;
+
+	//	std::string sstr1 = std::getenv("SolutionDir");
+	std::string sstr1 = SOL_DIR;
+	char *pValue;
+	size_t len;
+	errno_t err = _dupenv_s(&pValue, &len, "Platform");
+
+	std::cout << pValue;
+	std::getchar();
+
+	
 
 //---
 	// QStandardPaths Class
