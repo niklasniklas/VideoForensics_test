@@ -37,9 +37,9 @@ void main(void)
 	std::string sstr1 = SOL_DIR;
 	char *pValue;
 	size_t len;
-	errno_t err = _dupenv_s(&pValue, &len, "Platform");
+	errno_t err = _dupenv_s(&pValue, &len, "DLIB_DIR");
 
-	std::cout << pValue;
+	//std::cout << pValue;
 	std::getchar();
 
 	
